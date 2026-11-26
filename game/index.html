@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Lantern Harbor — Spot the Difference</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0d2436;
+    height: 100%;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  canvas {
+    display: block;
+    width: min(1280px, 100vw);
+    height: auto;
+    image-rendering: auto;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="800" aria-label="Lantern Harbor, a spot the difference game"></canvas>
+<script type="module" src="./src/boot.js"></script>
+</body>
+</html>
